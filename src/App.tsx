@@ -6,8 +6,10 @@ function App() {
 
   return (
     <>
-      <div className='container'>
+      <div >
         <Hero />
+        <HeroBody />
+        <HeroBody />
         <HeroBody />
       </div>
     </>

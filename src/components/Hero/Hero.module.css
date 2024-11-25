@@ -1,10 +1,17 @@
 .header {
-    height: 80px;
+    height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1% 10%;
+    background-color: currentColor;
+    position: fixed;
+    box-shadow: 0px 25px 52px rgba(0, 0, 0, 50%);
+}
+
+.header.img {
+    fill: currentColor;
 }
 
 .nav-menu {
@@ -12,17 +19,11 @@
     align-items: center;
 }
 
-.search-image {
-    border: none;
-    left: 1185px;
-    position: absolute;
-}
-
 .search-bar {
-    height: 20px;
-    width: 180px;
+    height: 30px;
+    width: 13%;
     align-items: center;
-    padding: 1.5%;
+    padding-left: 1.2%;
     border-radius: 5px;
     justify-content: space-between;
     display: flex;
@@ -30,40 +31,57 @@
     background-color: rgb(219, 219, 219);
 }
 
-.body-left {
-    height: 400px;
-    width: 50%;
-    padding: 0 12%;
+.Name{
     display: flex;
     align-items: center;
-}
-
-.body-right {
-    height: 400px;
-    width: 50%;
-    padding-left: 13%;
-    display: flex;
-    align-items: center;
-}
-
-.content{
-    display: flex;
+    position: relative;
+    bottom: 5%;
     h1{
         font-size: 20px;
     }
 
     h2{
         font-size: 52px;
-        position: absolute;
-        left: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .container-body {
+    padding: 0 10%;
+    height: 600px;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 65px 52px rgba(0, 0, 0, 10%);
+
 }
 
-.textHero {
-    margin-bottom: 15px;
-    font-size: 36px;
+.container-name {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid;
+    border-radius: 5px;
+    position: relative;
+    top: 25%;
+    right: 85%;
+    color: currentColor;
+    padding: 2%;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+.role{
+    font-family: "Oswald", serif;
+    font-size: 25px;
 }

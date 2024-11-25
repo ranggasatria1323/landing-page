@@ -4,3 +4,14 @@
   background-color: rgb(56, 56, 56);
   align-items: center;
 }
+
+.darkmode-button {
+  height: 50px;
+  width: 50px;
+  border: solid;
+  position: fixed;
+  border-radius: 50%;
+  top: 2.2%;
+  left: 75%;
+  align-items: center;
+}
