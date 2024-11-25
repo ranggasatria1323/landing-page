@@ -5,7 +5,6 @@ import style from "./Hero.module.css"
 export default function HeroBody(){
     return(
         <div className={style["container-body"]}>
-            <div></div>
             <div className={style['container-name']}>
                 <div className={style['Name']}>
                     <h1 style={{fontSize:'30px'}}>I'M</h1>
