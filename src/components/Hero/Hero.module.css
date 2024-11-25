@@ -36,6 +36,8 @@
     align-items: center;
     position: relative;
     bottom: 5%;
+    z-index: -10;
+
     h1{
         font-size: 20px;
     }
@@ -63,7 +65,6 @@
     align-items: center;
     height: 100%;
     width: 50%;
-    z-index: -10;
 }
 
 .button {
