@@ -1,11 +1,15 @@
 import './App.css'
-import Demo from './components/Demo/Demo'
+import Hero from './components/Hero/Hero'
+import HeroBody from './components/Hero/Hero_Body'
 
 function App() {
 
   return (
     <>
-      <Demo />
+      <div className='container'>
+        <Hero />
+        <HeroBody />
+      </div>
     </>
   )
 }
