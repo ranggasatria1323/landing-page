@@ -50,13 +50,13 @@ export const ColorModeButton = React.forwardRef<
         onClick={toggleColorMode}
         variant="ghost"
         aria-label="Toggle color mode"
-        size="sm"
+        height={'5.5%'}
         ref={ref}
         {...props}
         css={{
           _icon: {
-            width: "80%",
-            height: "80%",
+            width: "70%",
+            height: "100%",
           },
         }}
       >

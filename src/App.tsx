@@ -1,4 +1,6 @@
 import './App.css'
+import About from './components/About'
+import Portofolio from './components/About/Portofolio'
 import Hero from './components/Hero/Hero'
 import HeroBody from './components/Hero/Hero_Body'
 
@@ -9,8 +11,8 @@ function App() {
       <div >
         <Hero />
         <HeroBody />
-        <HeroBody />
-        <HeroBody />
+        <About />
+        <Portofolio />
       </div>
     </>
   )
