@@ -1,12 +1,9 @@
-
-
 .header {
-    height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 10%;
+    padding: 0.5% 10%;
     background-color: currentColor;
     z-index: 100;
     position: fixed;
@@ -18,15 +15,28 @@
 }
 
 .nav-menu {
-    position: relative;
-    left: 50px;
+    height: 100%;
+    width: 100%;
+    left: 45%;
     display: flex;
+    justify-content: center;
     align-items: center;
+
+    a{
+        font-weight:500;
+        font-size: 30px;
+        filter: invert();
+    }
+
+    a:hover{
+        border-bottom: solid;
+    }
+    
 }
 
 .search-bar {
     height: 30px;
-    width: 13%;
+    width: 270px;
     align-items: center;
     padding-left: 1.2%;
     border-radius: 5px;
@@ -65,7 +75,7 @@
     position: relative;
     height: 800px;
     width: 100%;
-    top: 10vh;
+    top: 9vh;
     box-shadow: 0px 65px 52px rgba(0, 0, 0, 40%);
 }
 
@@ -94,24 +104,40 @@
 
 .role{
     font-family: "Oswald", serif;
-    font-size: 25px;
+    font-size: 80px;
+    height: 200px;
+    width: 820px;
+    position: absolute;
+    bottom: 48%;
 }
 
 .foto-profile {
     filter: grayscale(1);
-    position: relative;
-    left: 10%;
-    padding-right: 8.6%;
-    object-fit: cover;
-    height: 800px;
-    width: 100%;
+    position: absolute;
+    object-fit: fill;
+    bottom: 0;
+    left: 25%;
+    height: 100vh;
+    width: 150vh;
     z-index: -1;
 }
  .my-about{
+    /* style={{width:'70%', fontSize:'25px', letterSpacing:'1px', lineHeight:'120%'}} */
+    font-size: 25px;
+    
     color: white;
     position: absolute;
-    top: 20%;
+    top: 13%;
     left: 15%;
+ }
+
+ .header-about{
+    /* style={{position:'absolute', top:'6%', fontSize:'60px', fontWeight:'bold', color:'white'}} */
+    position: absolute;
+    top: 6%;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
  }
 
  .mySkills{
@@ -119,7 +145,7 @@
     font-size: 60px;
     color: white;
     position: absolute;
-    top: 40%;
+    top: 26%;
     left: 43%;
  }
 
@@ -129,15 +155,15 @@
     gap: 2%;
     left: 0;
     padding: 0 10%;
-    top: 50%;
+    top: 35%;
     display: flex;
-    height: 20%;
+    height: 300px;
     width: 100%;
  }
 
  .skills{
-    height: 100%;
-    width: 20%;
+    height: 300px;
+    width: 300px;
     background-color: rgb(68, 68, 68);
     border-radius: 25px;
     display: flex;
@@ -167,10 +193,18 @@
     background-color: grey;
 } 
 
+.container-portofolio{
+    padding: 0 10%;
+    position: relative;
+    height: 1400px;
+    width: 100%;
+    top: 9vh;
+    box-shadow: 0px 65px 52px rgba(0, 0, 0, 40%);
+}
 .portofolio{
     position: absolute;
     left: 41%;
-    top: 15%;
+    top: 6%;
 
     h1{
         font-weight: bold;
@@ -187,7 +221,7 @@
 
 .grid-container{
     position: relative;
-    top: 25%;
+    top: 15%;
     display: grid;
     grid-template-columns: auto auto;
     padding: 5px;
@@ -203,4 +237,223 @@
     padding: 30% 60px;
     font-size: 30px;
     text-align: center;
+}
+
+.pop-porto{
+    filter:invert();
+    p{
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+.list{
+    list-style-type: circle;
+}
+
+.youtube{
+    filter: invert();
+}
+
+.youtube:fullscreen{
+    filter: invert(0);
+}
+
+.logo {
+    height: 5%;
+    width: 5%;
+    filter: invert(1);
+    fill: currentColor;
+  }
+  
+  .logo:hover {
+    color: orange;
+    filter: invert(0);
+  }
+  .darkmode-button {
+    border:2px solid ;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    left: 72%;
+    align-items: center;
+  }
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        height: 100%;
+        width: 100vh;
+        padding-right: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        a{
+            font-weight:500;
+            font-size: 20px;
+            filter: invert();
+        }
+    
+        a:hover{
+            border-bottom: solid;
+        }
+        
+    }
+    .search-bar {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5% 2%;
+        max-width: 100%;
+        background-color: currentColor;
+        z-index: 100;
+        position: fixed;
+        box-shadow: 0px 25px 52px rgba(0, 0, 0, 50%);
+    }
+
+    .container-body {
+        position: relative;
+        height: 800px;
+        min-width: 520px;
+        top: 9vh;
+        box-shadow: 0px 65px 52px rgba(0, 0, 0, 40%);
+    }
+
+    .foto-profile {
+        display: none;
+        filter: grayscale(1);
+        left: 25%;
+        height: 800px;
+        width: 1300px;
+        z-index: -1;
+    }
+
+    .mySkills{
+        font-weight: bold;
+        font-size: 60px;
+        color: white;
+        position: absolute;
+        top: 36%;
+        left: 43%;
+     }
+    
+     .boxSkills{
+        position: absolute;
+        justify-content: center;
+        gap: 2%;
+        left: 0;
+        padding: 0 10%;
+        top: 35%;
+        display: flex;
+        height: 300px;
+        width: 100%;
+     }
+    
+     .skills{
+        height: 300px;
+        width: 300px;
+        background-color: rgb(68, 68, 68);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: auto;
+    
+    
+        img{
+            position: relative;
+            bottom: 10%;
+            height: 50%;
+            width: 50%;
+        }
+    
+        p{
+            font-weight: bold;
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            top: 70%;
+        }
+        
+     }
+    
+    .skills:hover{
+        background-color: grey;
+    } 
+    
+    .portofolio{
+        position: absolute;
+        left: 41%;
+        top: 6%;
+    
+        h1{
+            font-weight: bold;
+            position: relative;
+            font-size: 60px;
+            align-items: center;
+        }
+
+        .container-portofolio{
+            height: 200px;
+        }
+        
+    }
+    .darkmode-button {
+        scale: 2;
+        border:2px solid ;
+        position: fixed;
+        width: 30px;
+        border-radius: 50%;
+        left: 90%;
+        align-items: center;
+      }
+      .logo {
+        height: 8%;
+        width: 8%;
+        filter: invert(1);
+        fill: currentColor;
+      }
+      .container-name {
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .Name{
+            align-items: center;
+            position: absolute;
+            bottom: 35%;
+
+            h1{
+                position: absolute;
+                font-size: 30px;
+                bottom: 200px;
+            }
+
+            h2{
+                position: absolute;
+                font-weight: bolder;
+                width: 500px;
+                font-size: 52px;
+                text-align: left;
+                display: flex;
+                left: 45px;
+                bottom: 193px;
+            }
+            .role {
+                font-size: 50px;
+                position: absolute;
+                bottom: 48%;
+                left: 47%;
+                width: 500px;
+            }
+        }
+    }
 }

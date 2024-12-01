@@ -1,11 +1,11 @@
 import Page from "../DarkMode/Page"
 import style from "./Hero.module.css"
-import { Button, Input } from "@chakra-ui/react"
+import { Input } from "@chakra-ui/react"
 
 export default function Hero() {
     return(
         <div className={style["header"]}>
-            <div className="logo">
+            <div className={style['logo']}>
                 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376.64 377.52">
                     <rect className="cls-1" x="104.97" y="39.67" width="35.76" height="180.24"/>
                     <polygon className="cls-1" points="272.08 221.79 225.85 221.79 157.14 129.79 203.38 129.79 272.08 221.79"/>
@@ -27,12 +27,14 @@ export default function Hero() {
                 </svg>
             </div>
             <div className={style["nav-menu"]}>
-                <Button fontSize={19} bgColor={'rgba(0,0,0,0)'} border={'none'}>Home</Button>
-                <Button fontSize={19} bgColor={'rgba(0,0,0,0)'} border={'none'} marginLeft={10}>Portofolio</Button>
-                <Button fontSize={19} bgColor={'rgba(0,0,0,0)'} border={'none'} marginLeft={10}>Contact</Button>
+                <a href="#about">About</a>
+                <a href="#portofolio" style={{marginLeft:'30px'}}>Portofolio</a>
+                <a href="#experience" style={{marginLeft:'30px'}}>Experience</a>
+                <a href="#contact" style={{marginLeft:'30px'}}>Contact</a>
             </div >
-            <Input className={style['search-bar']} placeholder="Search" />
             <Page> </Page>
+            <Input className={style['search-bar']} placeholder="Search" />
+            
         </div>
     )
 }
