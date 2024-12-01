@@ -1,7 +1,6 @@
-import { Text,Separator,Stack, Flex, Box} from "@chakra-ui/react"
+import { Text,Stack, Flex, Box} from "@chakra-ui/react"
 import { Rating } from "@/components/ui/rating"
 import { Avatar } from "@/components/ui/avatar"
-import style from './../Hero/Hero.module.css'
 
 export default function Testimonial(){
     return(
