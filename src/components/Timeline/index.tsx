@@ -12,8 +12,8 @@ import style from './../Hero/Hero.module.css'
 
 const Experience = () => {
   return (
-    <div id='experience' style={{backgroundColor:'#353535', zIndex:'1', height:'500px', boxShadow:'none'}} className={style['container-body']}>
-    <Flex direction={{base:"column"}} paddingX={{base:"16px", md:"100px"}}>
+    <div id='experience' style={{backgroundColor:'#353535', zIndex:'1', height:'500px', boxShadow:'none'}} className={style['container-experience']}>
+    <Flex direction={{base:"column"}} paddingX={{base:"16px", md:"0px"}}>
          <Flex  direction={{base:"column"}} paddingY={{base:"40px"}}>
             <Text color={"white"} textStyle="7xl"  > 
             <strong>Experience</strong>

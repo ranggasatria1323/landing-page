@@ -10,12 +10,15 @@ import {
 } from "@/components/ui/dialog"
 import style from './../Hero/Hero.module.css'
 import { AspectRatio } from "@chakra-ui/react"
+import CompanyProfile from './../../assets/CompanyProfile.gif'
+import Bumper from './../../assets/Bumper Acara.gif'
+import Gendhis from './../../assets/Gendhis.gif'
 
 const Dialog = () => {
   return (<>
     <DialogRoot scrollBehavior="inside" size="cover">
       <DialogTrigger asChild>
-        <Button className={style['grid-item']} style={{backgroundImage:'url(https://i.postimg.cc/PrN0gV5Y/Company-Profile.gif)'}}></Button>
+        <Button className={style['grid-item']}><img style={{objectFit:'cover', height:'100%', width:'100%' , borderRadius:'2%'}} src={CompanyProfile} /></Button>
       </DialogTrigger>
       <DialogContent className={style['pop-porto']} style={{height:'750px', marginTop:'5%', width:'900px', padding:'2% 5%'}}>
         <DialogHeader >
@@ -36,7 +39,7 @@ const Dialog = () => {
     </DialogRoot>
     <DialogRoot scrollBehavior="inside" size="cover">
       <DialogTrigger asChild>
-        <Button className={style['grid-item']} style={{backgroundImage:'url(https://i.postimg.cc/k48V4vs5/Gendhis.gif)'}}></Button>
+      <Button className={style['grid-item']}><img style={{objectFit:'cover', height:'100%', width:'100%', borderRadius:'2%'}} src={Gendhis} /></Button>
       </DialogTrigger>
       <DialogContent className={style['pop-porto']} style={{height:'87vh', marginTop:'5%', width:'150vh', padding:'2% 5%'}}>
         <DialogHeader>
@@ -67,7 +70,7 @@ const Dialog = () => {
     </DialogRoot>
     <DialogRoot scrollBehavior="inside" size="cover">
       <DialogTrigger asChild>
-        <Button className={style['grid-item']} style={{backgroundImage:'url(https://i.postimg.cc/3RRTf84Q/Bumper-Acara.gif)'}}></Button>
+      <Button className={style['grid-item']}><img style={{objectFit:'cover', height:'100%', width:'100%', borderRadius:'2%'}} src={Bumper} /></Button>
       </DialogTrigger>
       <DialogContent className={style['pop-porto']} style={{height:'750px', marginTop:'5%', width:'900px', padding:'2% 5%'}}>
         <DialogHeader>
@@ -104,7 +107,7 @@ const Dialog = () => {
     </DialogRoot>
     <DialogRoot scrollBehavior="inside" size="cover">
       <DialogTrigger asChild>
-        <Button className={style['grid-item']} style={{backgroundImage:'url(https://pouch.jumpshare.com/preview/M6Xvzf-qclgyC_c-AbnPnXMMa3KEINr4GAZgNVltRYyLtogOOZqhnpYD875Tii60nWqdj6oXy-BQdIMuPp0t4gtSrXRF1yQG2Ya0vd91xcQ)'}}></Button>
+      <Button className={style['grid-item']}><img style={{objectFit:'cover', height:'100%', width:'100%', borderRadius:'2%'}} src={CompanyProfile} /></Button>
       </DialogTrigger>
       <DialogContent className={style['pop-porto']} style={{height:'750px', marginTop:'5%', width:'900px', padding:'2% 5%'}}>
         <DialogHeader>

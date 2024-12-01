@@ -78,6 +78,22 @@
     top: 9vh;
     box-shadow: 0px 65px 52px rgba(0, 0, 0, 40%);
 }
+.container-experience {
+    padding: 0 10%;
+    position: relative;
+    height: 800px;
+    width: 100%;
+    top: 9vh;
+    box-shadow: 0px 65px 52px rgba(0, 0, 0, 40%);
+}
+.container-portofolio{
+    padding: 0 10%;
+    position: relative;
+    height: 1400px;
+    width: 100%;
+    top: 9vh;
+    box-shadow: 0px 65px 52px rgba(0, 0, 0, 40%);
+}
 
 .container-name {
     /* border: 1px solid black; */
@@ -193,14 +209,7 @@
     background-color: grey;
 } 
 
-.container-portofolio{
-    padding: 0 10%;
-    position: relative;
-    height: 1400px;
-    width: 100%;
-    top: 9vh;
-    box-shadow: 0px 65px 52px rgba(0, 0, 0, 40%);
-}
+
 .portofolio{
     position: absolute;
     left: 41%;
@@ -230,12 +239,13 @@
 
 .grid-item{
     position: relative;
+    height: 100%;
     background-size: cover;
     background-position: left;
     border-radius: 2%;
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 30% 60px;
     font-size: 30px;
+    margin: 0 0;
     text-align: center;
 }
 
@@ -284,7 +294,7 @@
     .nav-menu {
         height: 100%;
         width: 100vh;
-        padding-right: 30%;
+        padding-right: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -338,8 +348,8 @@
         font-size: 60px;
         color: white;
         position: absolute;
-        top: 36%;
-        left: 43%;
+        top: 26%;
+        left: 37%;
      }
     
      .boxSkills{
@@ -355,8 +365,8 @@
      }
     
      .skills{
-        height: 300px;
-        width: 300px;
+        height: 150px;
+        width: 150px;
         background-color: rgb(68, 68, 68);
         border-radius: 25px;
         display: flex;
@@ -375,12 +385,14 @@
         p{
             font-weight: bold;
             color: white;
-            font-size: 25px;
+            font-size: 20px;
             position: absolute;
-            top: 70%;
+            top: 30%;
         }
         
      }
+
+     
     
     .skills:hover{
         background-color: grey;
@@ -388,8 +400,8 @@
     
     .portofolio{
         position: absolute;
-        left: 41%;
-        top: 6%;
+        left: 31%;
+        top: 10%;
     
         h1{
             font-weight: bold;
@@ -397,28 +409,24 @@
             font-size: 60px;
             align-items: center;
         }
-
-        .container-portofolio{
-            height: 200px;
-        }
         
     }
     .darkmode-button {
-        scale: 2;
+        scale: 1;
         border:2px solid ;
         position: fixed;
-        width: 30px;
+        width: 40px;
         border-radius: 50%;
         left: 90%;
         align-items: center;
       }
-      .logo {
+    .logo {
         height: 8%;
         width: 8%;
         filter: invert(1);
         fill: currentColor;
-      }
-      .container-name {
+    }
+    .container-name {
         /* border: 1px solid black; */
         display: flex;
         justify-content: space-between;
@@ -455,5 +463,25 @@
                 width: 500px;
             }
         }
+    }
+    .my-about{
+        /* style={{width:'70%', fontSize:'25px', letterSpacing:'1px', lineHeight:'120%'}} */
+        font-size: 15px;
+        padding-right: 10%;
+        color: white;
+        position: absolute;
+        top: 13%;
+        left: 15%;
+     }
+     .container-portofolio{
+        height: 600px;
+    }
+    .grid-container{
+        position: relative;
+        top: 30%;
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px;
+        gap: 45px;
     }
 }
