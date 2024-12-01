@@ -1,4 +1,4 @@
-import { Text, Flex, Separator } from "@chakra-ui/react"
+import { Text, Flex } from "@chakra-ui/react"
 import {
   TimelineConnector,
   TimelineContent,
