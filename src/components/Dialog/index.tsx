@@ -13,6 +13,7 @@ import { AspectRatio } from "@chakra-ui/react"
 import CompanyProfile from './../../assets/CompanyProfile.gif'
 import Bumper from './../../assets/Bumper Acara.gif'
 import Gendhis from './../../assets/Gendhis.gif'
+import BioAttact from './../../assets/bioAttack.gif'
 
 const Dialog = () => {
   return (<>
@@ -74,7 +75,7 @@ const Dialog = () => {
       </DialogTrigger>
       <DialogContent className={style['pop-porto']} style={{height:'750px', marginTop:'5%', width:'900px', padding:'2% 5%'}}>
         <DialogHeader>
-          <DialogTitle>With Inside Scroll</DialogTitle>
+          <DialogTitle style={{fontSize:'30px', marginBottom:'20px'}}>Bumper Opening Company</DialogTitle>
         </DialogHeader>
         <DialogCloseTrigger />
         <DialogBody >
@@ -107,15 +108,32 @@ const Dialog = () => {
     </DialogRoot>
     <DialogRoot scrollBehavior="inside" size="cover">
       <DialogTrigger asChild>
-      <Button className={style['grid-item']}><img style={{objectFit:'cover', height:'100%', width:'100%', borderRadius:'2%'}} src={CompanyProfile} /></Button>
+      <Button className={style['grid-item']}><img style={{objectFit:'cover', height:'100%', width:'100%', borderRadius:'2%'}} src={BioAttact} /></Button>
       </DialogTrigger>
       <DialogContent className={style['pop-porto']} style={{height:'750px', marginTop:'5%', width:'900px', padding:'2% 5%'}}>
         <DialogHeader>
-          <DialogTitle>With Inside Scroll</DialogTitle>
+          <DialogTitle style={{fontSize:'30px', marginBottom:'20px'}}>2D Animation "Bio Attack!"</DialogTitle>
         </DialogHeader>
         <DialogCloseTrigger />
         <DialogBody >
-            <p>AWdasdhiahsfiahsdihaiwdhaishdaihwidhiahsidhaiwhdiahsidhaiwhdiahsidhaihwdihasidhiwhadishdiahwidhaishdiahsfihasidhaihfiahsdihaiwhdiahsidjaisjdiasfuhaiysgdjahvbfygawiegaibsfyveifaiusgdiuagsigduaiwerarysadagwurgaiwgeduasdgasufgauigseiuahwsuhdhabscvzhxvcavysdvqvweigqwygryqwgrgasbdfhbzxjchbjhasbchjbajhbsdfhabsjfbhahbwejhqhwbejhqbwrhqwr</p>
+            <p style={{fontWeight:'bold'}}>Situation:</p>
+            <p style={{lineHeight:"40px"}}>The production team faced the challenge of creating a 2D animated film in the biohazard genre that could convey tension and drama while maintaining high visual and narrative quality. With the rising interest in this genre, the team had to ensure the story and animation could compete in the crowded market.</p><br/>
+            <p style={{fontWeight:'bold'}}>Task:</p>
+            <p style={{lineHeight:"40px"}}>Our task was to produce a 2D animated film titled "Bio Attack" that depicted the biohazard threat in a compelling and impactful way. The film needed to capture the audience's attention and deliver a thrilling experience.</p><br/>
+            <p style={{fontWeight:'bold'}}>Action:</p>
+            <p style={{lineHeight:"40px"}}>- Story Development: We wrote a strong script that combined elements of tension and drama, with complex characters and an engaging plot. We also conducted thorough research on biohazard situations to ensure accuracy and credibility in the story.</p><br/>
+            <p style={{lineHeight:"40px"}}>- Visual Design: Developed a unique and engaging visual style, using 2D animation techniques to create a realistic and suspenseful atmosphere. Characters and backgrounds were designed in detail to support the story.</p>   <br/>        
+            <p style={{lineHeight:"40px"}}>- Sound Effects and Music: Selected appropriate sound effects and background music to enhance the tension and emotional impact of the film. Collaborated with professional composers and sound designers to achieve the best results.</p>    <br/>      
+            <p style={{lineHeight:"40px"}}>- Production and Animation: Carried out the animation process meticulously, ensuring each frame brought the story closer to the audience. We also used advanced animation techniques to produce smooth and realistic movements.</p>           <br/>
+            <p style={{fontWeight:'bold'}}>Result:</p>
+            <p style={{lineHeight:"40px"}}>"Bio Attack" became one of the most popular 2D animated films in the biohazard genre. It received positive reviews from critics and audiences, who praised the strong story, deep characters, and stunning visuals. The film also won several awards at international animation film festivals, proving its quality and broad appeal.</p><br/>
+            <AspectRatio  maxW="1900px" ratio={2}>
+                  <iframe className={style['youtube']}
+                  title="BioAttack"
+                  src="https://www.youtube.com/embed/OqqwNJYX3iQ"
+                  allowFullScreen
+                />
+              </AspectRatio>
         </DialogBody>
       </DialogContent>
     </DialogRoot>

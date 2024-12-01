@@ -8,12 +8,13 @@ import {
   TimelineDescription,
 } from "@/components/ui/timeline"
 import style from './../Hero/Hero.module.css'
+import Testimonial from "../Testimonial"
 
 
 const Experience = () => {
   return (
-    <div id='experience' style={{backgroundColor:'#353535', zIndex:'1', height:'500px', boxShadow:'none'}} className={style['container-experience']}>
-    <Flex direction={{base:"column"}} paddingX={{base:"16px", md:"0px"}}>
+    <div id='experience' style={{backgroundColor:'#353535', zIndex:'1', boxShadow:'none'}} className={style['container-experience']}>
+    <Flex direction={{base:"column"}} paddingX={{base:"16px", md:"0"}}>
          <Flex  direction={{base:"column"}} paddingY={{base:"40px"}}>
             <Text color={"white"} textStyle="7xl"  > 
             <strong>Experience</strong>
@@ -58,6 +59,7 @@ const Experience = () => {
             </TimelineRoot>
          </Flex>
       </Flex>
+      <Testimonial />
     </div>
   )
 }
